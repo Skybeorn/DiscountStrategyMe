@@ -13,13 +13,13 @@ public interface DiscountStrategy {
     //To get the CalculatedDiscountAmount we need 2 things. 
     //The amount purchased and the price per unit.
     // Every Discount has this, so we show those values here.
-    double getCalculatedDiscountAmount(double quanitiy, double cost);
+    double getCalculatedDiscountAmount(double quantity, double cost);
     
     //Not every discount uses this, but it doesn't hurt for one to have it. 
     // 
-    double getQuantitiyNeededForDiscount ();
+    double getQuantityNeededForDiscount ();
     
-    void setQuantitiyNeededForDiscount(double minQuanitiy);
+    void setQuantityNeededForDiscount(double minQuantity);
     
     
     
