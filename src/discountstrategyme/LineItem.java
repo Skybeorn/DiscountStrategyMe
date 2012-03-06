@@ -64,9 +64,9 @@ public class LineItem {
     public String getLineItemAsString() {
 //        double discountAmt = product.getCalculatedDiscountAmount(quantity);
         return product.getId() + "     " + product.getName()
-                + "     " + quantity + "     " + product.getUnitCost()
-                + "     " + getSubtotalDiscountAmount() + "    "
-                + getSubtotal();
+        + "     " + quantity + "     " + product.getUnitCost()
+        + "     " + getSubtotalDiscountAmount() + "    "
+        + getSubtotal();
     }
 
     public static void main(String[] args) {
