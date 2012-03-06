@@ -68,7 +68,7 @@ public class LineItem {
 
     public static void main(String[] args) {
 
-        LineItem p = new LineItem("2", 5.0);
+        LineItem p = new LineItem("2", 5);
         String data = p.getLineItemAsString();
         System.out.println(data);
     }
