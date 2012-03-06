@@ -19,6 +19,9 @@ public class LineItem {
         Product tea = new Product("3", "Tea", 5.00);
         tea.setDiscountStrategy(new NoDiscount());
         pDb[2] = milk;
+
+        this.product = findProduct(productId);
+        this.quantity = quantity;
     }
 
     public Product getProduct() {
@@ -59,7 +62,7 @@ public class LineItem {
     }
 
     public String getLineItemAsString() {
-        double discountAmt = product.getCalculatedDiscountAmount(quantity);
+//        double discountAmt = product.getCalculatedDiscountAmount(quantity);
         return product.getId() + "     " + product.getName()
                 + "     " + quantity + "     " + product.getUnitCost()
                 + "     " + getSubtotalDiscountAmount() + "    "
